@@ -69,7 +69,7 @@ public class BangunRuang {
                 System.out.println("Input Jari-jari bola");
                 r = input.nextInt();
                 vol = r * r * r ;
-                double vol1 = (4.0 / 3.0) * Math.PI * vol ;
+                double vol1 = (4.0 / 3.0) * phi * vol ;
                 System.out.println("Volume bola adalah: " + vol1);
                 break;
             case 5 :
