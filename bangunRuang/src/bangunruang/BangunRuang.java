@@ -24,6 +24,8 @@ public class BangunRuang {
         System.out.println("1. Kubus");
         System.out.println("2. Balok");
         System.out.println("3. Tabung");
+        System.out.println("4. Bola");
+        System.out.println("5. Kerucut");
         System.out.println("==========================");
         System.out.println("Pilih Bangun Ruang Yang Ingin di Hitung");
         int pilih = input.nextInt();
@@ -60,6 +62,25 @@ public class BangunRuang {
                 t = input.nextInt();
                 vol = phi*r*r+t;
                 System.out.println("Volume kubus adalah: " + vol);
+                break;
+            case 4 :
+                System.out.println("Hitung Bangun Ruang bola:");
+                System.out.println("==========================");
+                System.out.println("Input Jari-jari bola");
+                r = input.nextInt();
+                vol = r * r * r ;
+                double vol1 = (4.0 / 3.0) * Math.PI * vol ;
+                System.out.println("Volume bola adalah: " + vol1);
+                break;
+            case 5 :
+                System.out.println("Hitung Bangun Ruang volume kerucut:");
+                System.out.println("==========================");
+                System.out.println("Input jari-jari Kerucut");
+                r = input.nextInt();
+                System.out.println("Input tinggi kerucut");
+                t = input.nextInt();
+                vol = (1.0 / 3.0) * phi * r * r * t;
+                System.out.println("Volume Kerucut = "+vol);
                 break;
         }
         
